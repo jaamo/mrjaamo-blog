@@ -11,15 +11,14 @@
       <a
         class="read-more"
         href="{{ SITEURL }}/{{ article.url }}"
-        title="Permalink to {{ article.title|striptags }}"
-        >Read more...</a
+        title="Linkki osoitteeseen {{ article.title|striptags }}"
+        >Lue lisää...</a
       >
-      <a
-        class="category"
-        href="{{ SITEURL }}/category/{{ article.category }}.html"
-      >
-        {{ article.category }}
+      {% for tag in article.tags %}
+      <a class="category" href="{{ SITEURL }}/tag/{{ tag }}.html">
+        {{ tag }}
       </a>
+      {% endfor %}
     </div>
   </article>
 

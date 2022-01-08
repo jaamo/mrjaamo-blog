@@ -178,14 +178,15 @@ header h1 svg {
 }
 
 header h1 svg path {
-  fill: black;
+  fill: white;
 }
 
 header p {
   margin-top: 5px;
   text-transform: uppercase;
   font-size: 0.8rem;
-  color: black;
+  color: white;
+  opacity: 0.6;
 }
 
 article {
@@ -321,10 +322,20 @@ article p {
   transition: all 0.2s var(--easing-easeoutcirc);
 }
 
+.article-nav a.category:first-child {
+  margin-left: 0;
+}
+
 .article-nav a.category:hover,
 .article-nav a.category:active {
   background-size: 100% 100%;
   color: white;
+}
+
+.paginator {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 footer {

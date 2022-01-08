@@ -22,7 +22,7 @@ const easeInOutCirc = (x) =>
     : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2;
 const noiseFunc = (x, factor, progress) => Math.sin(x) * factor * progress;
 const noiseFunc2 = (x) =>
-  1 + Math.sin(x / 10) * Math.sin(x / 4) * Math.cos(x / 2) * Math.cos(x / 50);
+  1 + Math.sin(x / 20) * Math.sin(x / 4) * Math.cos(x / 2) * Math.cos(x / 50);
 
 const vector = (x, y, angle, distance) => {
   return {
@@ -42,25 +42,30 @@ const initHeader = () => {
   const height = 600;
   canvas.width = width;
   canvas.height = height;
+  let frame = 0;
   const render = () => {
+    frame++;
+    window.requestAnimationFrame(render);
+    if (frame % 3 != 0) {
+      return;
+    }
     ctx.clearRect(0, 0, width, height);
     const now = Date.now();
     const halfW = width / 2;
     const halfH = 420;
-    const slowDownFactor = 50000;
+    const slowDownFactor = 100000;
     const progress = (now % slowDownFactor) / slowDownFactor;
-    const lines = 50;
+    const lines = 100;
     for (let i = 0; i < lines; i++) {
       const progressFactor = noiseFunc2(i);
-      //console.log(progressFactor);
       const lineProgress = (progress + progressFactor) % 1;
-      const angle = now / 50000 + Math.PI * 2 * (i / lines) * progressFactor;
+      const angle = now / 100000 + Math.PI * 2 * (i / lines) * progressFactor;
       const distance1 = 0.5 * halfW * easeInOutSine(lineProgress);
       const distance2 =
         2 * halfW * easeInOutSine(Math.min(lineProgress + 0.1, 1));
       const opacity = (1 - easeInOutSine(lineProgress)) * 0.4;
       ctx.strokeStyle = `rgba(255, 255, 255, ${opacity})`;
-      ctx.lineWidth = 400;
+      ctx.lineWidth = 100;
       ctx.beginPath();
       const v1 = vector(halfW, halfH, angle, distance1);
       const v2 = vector(halfW, halfH, angle, distance2);
@@ -72,9 +77,13 @@ const initHeader = () => {
       ctx.lineTo(x2, y2);
       ctx.stroke();
     }
-    window.requestAnimationFrame(render);
+    const grd = ctx.createRadialGradient(halfW, halfH, 50, halfW, halfH, 300);
+    grd.addColorStop(0, "rgba(26,25,25,1)");
+    grd.addColorStop(1, "rgba(26,25,25,0)");
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, 0, width, height);
   };
-  //render();
+  render();
 };
 
 const animateArticles = (articles) => {

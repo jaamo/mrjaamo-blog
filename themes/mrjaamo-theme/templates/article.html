@@ -15,12 +15,11 @@ translations.entry_hreflang(article) }} {% endif %} {% if article.description %}
     <h2>{{ article.title }}</h2>
     <p>{{ article.content }}</p>
     <div class="article-nav">
-      <a
-        class="category"
-        href="{{ SITEURL }}/category/{{ article.category }}.html"
-      >
-        {{ article.category }}
+      {% for tag in article.tags %}
+      <a class="category" href="{{ SITEURL }}/tag/{{ tag }}.html">
+        {{ tag }}
       </a>
+      {% endfor %}
     </div>
   </article>
 </main>
