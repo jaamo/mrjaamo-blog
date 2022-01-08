@@ -1,7 +1,15 @@
 {% extends "base.html" %} {% block content %}
 <main>
   {% for article in articles_page.object_list %}
-  <article class="viewport-check" data-viewport-class="in-viewport">
+  <article
+    class="viewport-check {% if article.cover is defined %}with-image{% endif %}"
+    data-viewport-class="in-viewport"
+  >
+    {% if article.cover is defined %}<img
+      class="lazy-load"
+      src=""
+      data-lazy-image="{{article.cover}}"
+    />{% endif %}
     <time datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>

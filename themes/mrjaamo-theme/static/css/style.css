@@ -336,6 +336,8 @@ article p {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  text-transform: uppercase;
+  opacity: 0.6;
 }
 
 footer {
