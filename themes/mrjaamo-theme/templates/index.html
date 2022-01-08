@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content %}
+<main>
+  {% for article in articles_page.object_list %}
+  <article class="viewport-check" data-viewport-class="in-viewport">
+    <time datetime="{{ article.date.isoformat() }}">
+      {{ article.locale_date }}
+    </time>
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.summary }}</p>
+    <div class="article-nav">
+      <a
+        class="read-more"
+        href="{{ SITEURL }}/{{ article.url }}"
+        title="Permalink to {{ article.title|striptags }}"
+        >Read more...</a
+      >
+      <a
+        class="category"
+        href="{{ SITEURL }}/category/{{ article.category }}.html"
+      >
+        {{ article.category }}
+      </a>
+    </div>
+  </article>
+
+  {% endfor %} {% if articles_page.has_other_pages() %} {% include
+  'pagination.html' %} {% endif %}
+</main>
+{% endblock content %}
