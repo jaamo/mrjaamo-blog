@@ -27,6 +27,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 5
 
+DEFAULT_DATE_FORMAT = '%d.%m.%Y'
+
 THEME = 'themes/mrjaamo-theme'
 
 # Uncomment following line if you want document-relative URLs when developing
