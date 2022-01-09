@@ -8,6 +8,7 @@
     {% if article.cover is defined %}<img
       class="cover with-lazy-load"
       src=""
+      alt="Kuvituskuva artikkelille"
       data-lazy-image="{{article.cover}}"
     />{% endif %}
     <time datetime="{{ article.date.isoformat() }}">
