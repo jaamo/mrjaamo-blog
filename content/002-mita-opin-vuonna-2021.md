@@ -3,9 +3,9 @@ Date: 2022-01-06 10:12
 Category: general
 Tags: oppiminen
 
-Aloitetaan juustoisella LinkedIn-kliseellä: elämä on jatkuvaa oppimista.
+Aloitetaan siirappisella LinkedIn-kliseellä: elämä on jatkuvaa oppimista.
 
-Vuodenvaihde on hyvä hetki pysähtyä ja katsoa taaksepäin, että mitä onkaan jäänyt mieleen päättyneen vuoden aikana. Itse kehityn parhaiten tekemällä, lukemalla ja kokeilemalla sekä kuuntelemalla ympärilläni olevia ihmisiä. Kymmenen vuotta sitten oppiminen tarkoitti mulle listaa teknologioista. Teknologiat toki löytyy edelleen listalta, mutta olen alkanut arvostaa myös muita elämän osa-alueita :)
+Vuodenvaihde on kuitenkin hyvä hetki pysähtyä ja katsoa taaksepäin, että mitä onkaan jäänyt mieleen päättyneen vuoden aikana. Itse kehityn parhaiten tekemällä, lukemalla ja kokeilemalla sekä kuuntelemalla ympärilläni olevia ihmisiä. Kymmenen vuotta sitten oppiminen tarkoitti mulle listaa teknologioista. Teknologiat toki löytyy edelleen listalta, mutta olen alkanut arvostaa myös muita elämän osa-alueita :)
 
 Itse nostaisin vuoden 2021 kehittymis- ja oppimislistalle seuraavat asiat:
 
