@@ -164,10 +164,16 @@ ol li::marker {
   font-weight: 700;
 }
 
-img.lazy-load {
+img.with-lazy-load {
   opacity: 0;
   width: 1px;
   height: 1px;
+}
+
+img.is-lazy-loaded {
+  opacity: 1;
+  width: auto;
+  height: auto;
 }
 
 header {
@@ -252,6 +258,7 @@ article.with-image {
 article img {
   margin-left: -80px;
 }
+
 article img.cover {
   position: absolute;
   object-fit: cover;
@@ -259,6 +266,12 @@ article img.cover {
   width: calc(100% + 160px);
   height: calc(100% + 160px);
   margin: -80px;
+  opacity: 0.3;
+}
+
+article img.cover.is-lazy-loaded {
+  width: calc(100% + 160px);
+  height: calc(100% + 160px);
   opacity: 0.3;
 }
 
@@ -278,7 +291,7 @@ article h2 a {
   color: black;
 }
 
-article.with-image h2 {
+article.with-image h2 a {
   color: white;
 }
 

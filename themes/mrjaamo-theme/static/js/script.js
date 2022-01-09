@@ -5,25 +5,25 @@ const isInViewport = (elem) => {
   const bounding = elem.getBoundingClientRect();
   return (
     bounding.top >= 0 &&
-    bounding.left >= 0 &&
     bounding.top <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    bounding.right <=
-      (window.innerWidth || document.documentElement.clientWidth)
+      (window.innerHeight || document.documentElement.clientHeight)
   );
 };
 
+/**
+ * Easing function.
+ */
 const easeInOutSine = (x) => -(Math.cos(Math.PI * x) - 1) / 2;
-const easeOutCirc = (x) => Math.sqrt(1 - Math.pow(x - 1, 2));
-const easeInCirc = (x) => 1 - Math.sqrt(1 - Math.pow(x, 2));
-const easeInOutCirc = (x) =>
-  x < 0.5
-    ? (1 - Math.sqrt(1 - Math.pow(2 * x, 2))) / 2
-    : (Math.sqrt(1 - Math.pow(-2 * x + 2, 2)) + 1) / 2;
-const noiseFunc = (x, factor, progress) => Math.sin(x) * factor * progress;
-const noiseFunc2 = (x) =>
+
+/**
+ * Attempt to generate predictable random (?) numbers.
+ */
+const noiseFunc = (x) =>
   1 + Math.sin(x / 20) * Math.sin(x / 4) * Math.cos(x / 2) * Math.cos(x / 50);
 
+/**
+ * Calculate end position of a vector.
+ */
 const vector = (x, y, angle, distance) => {
   return {
     x: Math.round(Math.cos(angle) * distance + x),
@@ -31,13 +31,12 @@ const vector = (x, y, angle, distance) => {
   };
 };
 
+/**
+ * Run header animation.
+ */
 const initHeader = () => {
   const canvas = document.querySelector("header canvas");
   const ctx = canvas.getContext("2d");
-
-  // Set canvas dimensions.
-  // const width = document.body.clientWidth;
-  // const height = document.body.clientHeight;
   const width = document.body.clientWidth;
   const height = 600;
   canvas.width = width;
@@ -57,7 +56,7 @@ const initHeader = () => {
     const progress = (now % slowDownFactor) / slowDownFactor;
     const lines = 100;
     for (let i = 0; i < lines; i++) {
-      const progressFactor = noiseFunc2(i);
+      const progressFactor = noiseFunc(i);
       const lineProgress = (progress + progressFactor) % 1;
       const angle = now / 100000 + Math.PI * 2 * (i / lines) * progressFactor;
       const distance1 = 0.5 * halfW * easeInOutSine(lineProgress);
@@ -86,6 +85,9 @@ const initHeader = () => {
   render();
 };
 
+/**
+ * Triggered on scroll to check if an article is in viewport.
+ */
 const animateArticles = (articles) => {
   for (article of articles) {
     if (isInViewport(article)) {
@@ -112,23 +114,18 @@ document.addEventListener("DOMContentLoaded", () => {
   animateArticles(articles);
 
   // Lazy load images.
-  const lazyLoadImages = document.querySelectorAll(".lazy-load");
-  console.log(lazyLoadImages);
+  const lazyLoadImages = document.querySelectorAll(".with-lazy-load");
   window.addEventListener(
     "scroll",
-    (e) => {
+    () => {
       for (img of lazyLoadImages) {
         if (isInViewport(img)) {
           const inViewportApplied = img.dataset.inViewportApplied;
           if (!inViewportApplied) {
             const imgSrc = img.dataset.lazyImage;
             img.dataset.inViewportApplied = true;
-            console.log("Load image " + imgSrc);
             img.addEventListener("load", () => {
-              img.style.opacity = 0.3;
-              img.style.width = "calc(100% + 160px)";
-              img.style.height = "calc(100% + 160px)";
-              console.log("Image loaded");
+              img.classList.add("is-lazy-loaded");
             });
             img.src = imgSrc;
           }
@@ -137,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     false
   );
+
   // Render some epic shit.
   initHeader();
 });
