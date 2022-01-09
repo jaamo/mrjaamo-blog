@@ -6,24 +6,35 @@
     data-viewport-class="in-viewport"
   >
     {% if article.cover is defined %}<img
-      class="lazy-load"
+      class="cover lazy-load"
       src=""
       data-lazy-image="{{article.cover}}"
     />{% endif %}
     <time datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
-    <h2>{{ article.title }}</h2>
+    <h2>
+      <a
+        class="read-more"
+        href="{{ SITEURL }}/{{ article.url }}"
+        title="Linkki artikkeliin {{ article.title|striptags }}"
+        >{{ article.title }}</a
+      >
+    </h2>
     <p>{{ article.summary }}</p>
     <div class="article-nav">
       <a
         class="read-more"
         href="{{ SITEURL }}/{{ article.url }}"
-        title="Linkki osoitteeseen {{ article.title|striptags }}"
+        title="Linkki artikkeliin {{ article.title|striptags }}"
         >Lue lisää...</a
       >
       {% for tag in article.tags %}
-      <a class="category" href="{{ SITEURL }}/tag/{{ tag }}.html">
+      <a
+        class="category"
+        href="{{ SITEURL }}/tag/{{ tag }}.html"
+        title="Arkistosivu kategorialle {{ tag }}"
+      >
         {{ tag }}
       </a>
       {% endfor %}

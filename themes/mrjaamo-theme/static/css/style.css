@@ -149,6 +149,21 @@ a:active {
   text-decoration: underline;
 }
 
+ol {
+  list-style-type: decimal-leading-zero;
+  margin-left: 27px;
+}
+
+ol li {
+  font-family: georgia, times;
+  line-height: 180%;
+  margin-bottom: 1.4rem;
+}
+
+ol li::marker {
+  font-weight: 700;
+}
+
 img.lazy-load {
   opacity: 0;
   width: 1px;
@@ -215,7 +230,8 @@ article {
   }
 }
 
-article.in-viewport {
+article.in-viewport,
+article.single {
   opacity: 1;
   transform: translatey(0);
 }
@@ -234,6 +250,9 @@ article.with-image {
 }
 
 article img {
+  margin-left: -80px;
+}
+article img.cover {
   position: absolute;
   object-fit: cover;
   object-position: center center;
@@ -255,8 +274,16 @@ article h2 {
   position: relative;
 }
 
+article h2 a {
+  color: black;
+}
+
 article.with-image h2 {
   color: white;
+}
+
+article.single h2 {
+  margin-bottom: 3rem;
 }
 
 time {
@@ -272,7 +299,11 @@ article p {
   position: relative;
 }
 
-.with-image p {
+article.single p {
+  margin-bottom: 1.4rem;
+}
+
+article.with-image p {
   color: #c0c1c6;
 }
 
@@ -342,7 +373,84 @@ article p {
 
 footer {
   background-color: var(--color-light-gray);
-  padding-top: 100px;
-  padding-bottom: 150px;
   text-align: center;
+}
+
+footer section {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 140%;
+}
+
+footer section.bio {
+  max-width: 600px;
+  margin: 0 auto 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+
+footer section.bio img {
+  width: 120px;
+  border-radius: 200px;
+  border: 4px solid white;
+}
+
+footer section.bio p {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+footer section.ituhippeily {
+  background-color: #1a1919;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  footer section.bio img {
+    width: 80px;
+  }
+  footer section.bio {
+    align-items: flex-start;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+footer section.ituhippeily div {
+  max-width: 600px;
+  margin: 0 auto 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer section.ituhippeily a {
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 120px;
+}
+
+footer section.ituhippeily a:active,
+footer section.ituhippeily a:hover {
+  background: white;
+  color: black;
+  transition: all 0.2s var(--easing-easeoutcirc);
+}
+
+@media screen and (max-width: 600px) {
+  footer section.ituhippeily div {
+    flex-direction: column;
+  }
+  footer section.ituhippeily p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 2rem;
+  }
 }

@@ -8,12 +8,12 @@ translations.entry_hreflang(article) }} {% endif %} {% if article.description %}
 <meta name="tags" content="{{tag}}" />
 {% endfor %} {% endblock %} {% block content %}
 <main>
-  <article class="viewport-check" data-viewport-class="in-viewport">
+  <article class="single">
     <time datetime="{{ article.date.isoformat() }}">
       {{ article.locale_date }}
     </time>
     <h2>{{ article.title }}</h2>
-    <p>{{ article.content }}</p>
+    {{ article.content }}
     <div class="article-nav">
       {% for tag in article.tags %}
       <a class="category" href="{{ SITEURL }}/tag/{{ tag }}.html">
