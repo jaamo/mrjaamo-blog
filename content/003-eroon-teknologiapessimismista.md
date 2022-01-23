@@ -2,7 +2,7 @@ Title: Eroon teknologiapessimismistä
 Date: 2022-01-18 10:12
 Category: general
 Tags: kirjat
--Cover: /images/mikko-hypponen-internet.jpg
+Cover: /images/mikko-hypponen-internet.jpg
 
 Luin joululomalla Mikko Hypposen kirjan Internet. Se ei välttämättä ole mikään kirjallinen mestariteos, mutta on kyllä pakko arvostaa Mikon positiivista suhtautumista teknologiaan. Hän sanoo kirjassaan:
 
