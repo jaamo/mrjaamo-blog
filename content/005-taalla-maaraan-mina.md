@@ -2,6 +2,7 @@ Title: Täällä määrään minä!
 Date: 2022-01-22 10:12
 Category: general
 Tags: laitteet
+Status: draft
 -Cover: /images/low-tech-laitteet.jpg
 
 Pari viikkoa sitten lupasin suhtautua positiivisemmin uusiin teknologioihin. Vaikka suhtautuisin positiivisesti uusiin juttuihin, niin oma kontrolli on minulle tärkeää. Vaikka raudalla ja softalla voi tehdä makeita juttuja, niin minusta minulla pitää ihmisenä olla mahdollisuus hallita tilannetta.
