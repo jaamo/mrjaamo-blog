@@ -1,4 +1,4 @@
-Title: Mitä opin vuonna 2021?
+Title: Kuinka pysya järjissään?
 Date: 2022-01-06 10:12
 Category: general
 Tags: oppiminen
