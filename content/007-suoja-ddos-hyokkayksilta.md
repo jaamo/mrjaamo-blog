@@ -2,8 +2,7 @@ Title: Varokaa palvelunestohyökkäystä
 Date: 2022-03-23 11:07
 Category: general
 Tags: tietoturva
-Status: draft
--Cover: /images/aamusumu.jpg
+-Cover: /images/ddos-cover-image.jpg
 
 Venäjän hyökkäys Ukrainaan on konkretisoinut kyberuhat aivan uudella tavalla. Hakkeriryhmä Anonymous on hyökännyt raskaasti ja näyttävästi Venäläisiä verkkopalveluita vastaan ja saanut useita palveluita kaadettua ja murrettua. Toisaalta Venäjällä kybervalmiudet ovat myös hyvät. Sodan myllätessä Suomessa onkin varoitettu kohonneesta hyökkäysuhasta.
 

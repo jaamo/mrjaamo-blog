@@ -2,7 +2,7 @@ Title: Täällä määrään minä!
 Date: 2022-02-22 10:12
 Category: general
 Tags: laitteet
--Cover: /images/low-tech-laitteet.jpg
+Cover: /images/low-tech-laitteet.jpg
 
 Olen nörtti ja kiinostunut teknologioista, mutta oma kontrolli on minulle tärkeää. Vaikka digipalvelut ja laitteet ovat makeita juttuja, niin minusta minulla pitää ihmisenä olla mahdollisuus hallita tilannetta.
 
