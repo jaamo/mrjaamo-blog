@@ -4,10 +4,10 @@ Category: general
 -Tags: tietoturva
 -Cover: /images/aamusumu-small.jpg
 
-Kuuma väite:
+Tutkalleni osuu paljon rekryilmoituksia. Monissa haetaan full stack -kehittäjää. Tällä tarkoitetaan webbimaailmassa tyyppiä, joka hallitsee kehityksen alusta loppuun aina taustajärjestelmistä (backend) selaimen käyttöliittymään (frontend).
 
-Vuonna 2000 oli mahdollista olla full stack developer siten, että oikeesti hallitsit stäkin kaikki osa-alueet huippuhyvin.
+Sellaista olen tässä miettinyt, että vuonna 2000 oli mahdollista olla full stack developer. Silleen, että oikeesti hallitsit stäkin kaikki osa-alueet huippuhyvin.
 
 Vuonna 2022 toi on lähes mahdotonta.
 
-Teknologiat on vuosien varrella syventyneet ja laventuneet merkittävästi. Jos haluaisit siis palkata yksisarvisen full slack -devaajan, joka tekee huippupalvelun alusta loppuun, niin onnea etsintään.
+Teknologiat on vuosien varrella syventyneet ja laventuneet merkittävästi. Jos siis haluaisit palkata yksisarvisen huippupalvelun alusta loppuun koodaavan full slack -devaajan, niin väitän ettei löydy.
