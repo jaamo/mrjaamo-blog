@@ -8,4 +8,4 @@ Omalle tutkalle on nyt kuluneina viikkoina osunut lukuisia tietoturvaan, tietotu
 
 Bottom line: täydellinen tietoturva ei tarkoita sitä, että asennettaan vain joku lisäosa saitille.
 
-![Alt Text](/images/tietoturvan-hinta-small.jpg)
+![Tietoturvan hinta](/images/tietoturvan-hinta-small.jpg)
