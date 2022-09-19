@@ -1,5 +1,5 @@
 Title: Suosikkityökaluni
-Date: 2022-09-30 16:10
+Date: 2022-08-30 16:10
 Category: general
 Tags: ohjelmointi, threejs
 -Cover: /images/everestaus2.jpg
