@@ -21,11 +21,11 @@ Tajusin tässä yksi päivä, että mitä kaikkea työnantaja mahdollistaa mulle
 - Sitten mennään museoon. Käytän museokorttia. Jonka olen maksanut virike-edulla.
 - Ja puolet mun vaatekaapista on Evermade-paitoja. Jotka firma on maksanut.\*\*
 
-Kun pysähdyn miettimään tätä, niin tajuan miten paljon hyvät työsuhde-edut merkitsee arjessa. Ja moni näistä asioista on mulle henkisesti tosi arvokkaita - kaikkea ei voi mitata rahassa.
+Vällillä tuntuu, että firmahan maksaa kaiken mitä mä teen. Hyvät työsuhde-edut merkitsee arjessa tosi paljon. Moni näistä asioista on mulle henkisesti tosi arvokkaita - ei pelkästään rahallisesti.
 
 Jos mun pitäisi itse maksaa tämä kaikki, tarvitsisin pari tonnia lisää liksaa kuussa. Tämä täytyy pitää myös mielestä, kun palkoista keskustellaan. Monet pitää etuja itsestäänselvyyksinä. Mutta niillä on iso arvo.
 
 Harmi, että se ebaysta ostettu pyörän runko pitää vielä maksaa ite.
 
-- Lounasedusta hyödyn vain veron. Mutta koska raha ei koskaan käy mun tilillä, se tuntuu ilmaiselta. Venytän sääntöjä :D
-  \*\* Myönnän, että mun vaatekaappi on säälittävä.
+\* Lounasedusta hyödyn vain veron. Mutta koska raha ei koskaan käy mun tilillä, se tuntuu ilmaiselta. Venytän sääntöjä :D
+\*\* Myönnän, että mun vaatekaappi on säälittävä.
